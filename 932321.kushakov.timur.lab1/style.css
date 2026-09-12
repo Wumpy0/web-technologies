@@ -1,0 +1,136 @@
+/* Цветовая гамма: зелёно-чёрная */
+:root {
+    --black: #111111;
+    --dark: #1c1c1c;
+    --green: #2e7d32;
+    --light-green: #4caf50;
+    --text: #e8e8e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--green);
+    color: #ffffff;
+    padding: 24px 32px;
+    text-align: center;
+}
+
+header .name {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 8px 0 0;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+main {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: var(--dark);
+    border-left: 4px solid var(--light-green);
+    padding: 16px;
+    align-self: flex-start;
+}
+
+section {
+    background-color: var(--dark);
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+}
+
+h2 {
+    color: var(--light-green);
+    margin-top: 0;
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 6px;
+}
+
+img {
+    display: block;
+    border: 3px solid var(--light-green);
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+a {
+    color: var(--light-green);
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    background-color: var(--black);
+    color: var(--text);
+    font: inherit;
+}
+
+button {
+    background-color: var(--green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-green);
+}
+
+footer {
+    background-color: var(--green);
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        border-left: none;
+        border-top: 4px solid var(--light-green);
+    }
+}
