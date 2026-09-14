@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе - Тимур Кушаков</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Внутренний стиль: кастомные маркеры списка "Навыки" */
+        #skills ul {
+            list-style: none;
+            padding-left: 28px;
+        }
+
+        #skills li::before {
+            content: "\25B6";
+            color: var(--color-primary-light);
+            display: inline-block;
+            width: 20px;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/img/avatar.jpg" alt="Портрет Тимура Кушакова" width="160" height="160" style="border-radius: 50%;">
+        <p class="name">Тимур Кушаков</p>
+        <h1>Спорт и активность</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="about">
+                <h2>Обо мне</h2>
+                <p>Меня зовут Тимур, я студент и увлекаюсь спортом. Спорт для меня - это дисциплина,
+                    характер и способ держать себя в форме. На этой странице собраны мои спортивные навыки
+                    и достижения.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Навыки</h2>
+                <ul>
+                    <li>Бег на средние и длинные дистанции</li>
+                    <li>Силовые тренировки и работа с собственным весом</li>
+                    <li>Плавание вольным стилем</li>
+                    <li>Игра в футбол на позиции полузащитника</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Проекты</h2>
+                <ol>
+                    <li>Забег «Томский марафон» - дистанция 10 км, финиш за 48 минут</li>
+                    <li>Первенство университета по футболу - 2 место в составе команды факультета</li>
+                    <li>Сдача нормативов ГТО - золотой знак отличия</li>
+                    <li>Соревнования по плаванию - 3 место на дистанции 50 м вольным стилем</li>
+                </ol>
+            </section>
+
+            <section id="contact">
+                <h2>Обратная связь</h2>
+                <form action="#" method="post">
+                    <p>
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                    </p>
+                    <p>
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Напишите ваше сообщение" required></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Отправить</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <span class="badge">Бег</span>
+            <h2>Вид спорта</h2>
+            <p>Мой основной вид спорта - <strong>бег</strong>. Тренируюсь 3-4 раза в неделю,
+                участвую в любительских забегах и готовлюсь к полумарафону.</p>
+            <p>Полезные ссылки:</p>
+            <ul>
+                <li><a href="https://www.gto.ru/" target="_blank" rel="noopener">Официальный сайт ГТО</a></li>
+                <li><a href="https://russiarunning.com/" target="_blank" rel="noopener">Календарь забегов</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="social">
+        <a href="https://t.me/" target="_blank" rel="noopener" title="Telegram">
+            <img src="assets/icons/telegram.svg" alt="Telegram" width="48" height="48">
+        </a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" title="ВКонтакте">
+            <img src="assets/icons/vk.svg" alt="ВКонтакте" width="48" height="48">
+        </a>
+        <a href="https://www.strava.com/" target="_blank" rel="noopener" title="Strava">
+            <img src="assets/icons/strava.svg" alt="Strava" width="48" height="48">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Тимур Кушаков. Все права защищены.</p>
+    </footer>
+</body>
+</html>
