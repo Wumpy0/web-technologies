@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280" role="img" aria-label="ДИПЛОМ">
+    <rect x="0" y="0" width="400" height="280" fill="#fafaf5"/>
+    <rect x="12" y="12" width="376" height="256" fill="none" stroke="#2e7d32" stroke-width="4"/>
+    <rect x="22" y="22" width="356" height="236" fill="none" stroke="#a5d6a7" stroke-width="2"/>
+    <text x="200" y="84" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="bold" fill="#1b5e20" letter-spacing="4">ДИПЛОМ</text>
+    <text x="200" y="130" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111111">II место, первенство университета</text>
+    <text x="200" y="156" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111111">по футболу</text>
+    <line x1="60" y1="210" x2="170" y2="210" stroke="#555555" stroke-width="1.5"/>
+    <text x="115" y="230" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#555555">подпись</text>
+    <circle cx="300" cy="206" r="28" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+    <text x="300" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#2e7d32">2026</text>
+</svg>
