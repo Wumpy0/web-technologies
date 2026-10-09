@@ -197,18 +197,23 @@ button:active {
     transform: scale(0.97);
 }
 
-/* Иконки соцсетей: fixed - всегда в правом нижнем углу экрана.
-   Контейнер relative - демонстрация относительного позиционирования для вложенных ссылок */
+/* Иконки соцсетей: fixed и relative заданы разным обёрткам.
+   .social - внешняя обёртка, position: fixed, всегда в правом нижнем углу экрана */
 .social {
     position: fixed;
     right: 24px;
     bottom: 24px;
+}
+
+/* .social-icons - вложенный контейнер иконок, position: relative
+   (демонстрация относительного позиционирования по варианту 3) */
+.social-icons {
+    position: relative;
     display: flex;
     gap: 12px;
 }
 
 .social a {
-    position: relative;
     display: block;
     line-height: 0;
     transition: transform var(--transition);
