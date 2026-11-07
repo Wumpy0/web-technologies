@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="achievement placeholder">
+    <path d="M18 4 L28 26 L22 30 L10 4 Z" fill="#2e7d32"/>
+    <path d="M46 4 L36 26 L42 30 L54 4 Z" fill="#1b5e20"/>
+    <circle cx="32" cy="42" r="18" fill="#e0e0e0" stroke="#757575" stroke-width="3" stroke-dasharray="4 3"/>
+    <path d="M32 31 L35 38 L42 38.5 L36.5 43 L38.5 50 L32 46 L25.5 50 L27.5 43 L22 38.5 L29 38 Z" fill="#757575"/>
+</svg>

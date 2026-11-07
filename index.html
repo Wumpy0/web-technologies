@@ -22,7 +22,7 @@
         }
     </style>
 </head>
-<body>
+<body class="theme-dark">
     <header>
         <img src="assets/img/avatar.jpg" alt="Портрет Тимура Кушакова" width="160" height="160" style="border-radius: 50%;">
         <p class="name">Тимур Кушаков</p>
@@ -36,6 +36,7 @@
                 <li><a href="#contact">Обратная связь</a></li>
             </ul>
         </nav>
+        <button type="button" id="theme-toggle" class="theme-toggle">Светлая тема</button>
     </header>
 
     <div class="container">
@@ -59,31 +60,40 @@
 
             <section id="achievements" class="light-section">
                 <h2>Достижения</h2>
-                <div class="cards">
-                    <article class="card">
+                <div class="achievements-controls">
+                    <button type="button" id="add-achievement">Добавить достижение</button>
+                    <button type="button" id="toggle-achievements" aria-controls="achievements-list" aria-expanded="true">Скрыть все достижения</button>
+                </div>
+                <div class="cards" id="achievements-list">
+                    <p class="cards-empty" id="achievements-empty" hidden>Список достижений пуст. Нажмите "Добавить достижение", чтобы добавить новое.</p>
+                    <div class="card">
                         <img src="assets/icons/medal-finisher.svg" alt="Медаль финишера" width="64" height="64">
                         <h3>Томский марафон</h3>
                         <time datetime="2025-09-14">14 сентября 2025</time>
                         <p>Забег на 10 км. Финишировал за 48 минут, это мой личный рекорд на дистанции.</p>
-                    </article>
-                    <article class="card">
+                        <button type="button" class="card-delete">Удалить</button>
+                    </div>
+                    <div class="card">
                         <img src="assets/icons/medal-silver.svg" alt="Серебряная медаль" width="64" height="64">
                         <h3>Первенство университета по футболу</h3>
                         <time datetime="2026-04-25">25 апреля 2026</time>
                         <p>2 место в составе команды факультета. Играл на позиции полузащитника.</p>
-                    </article>
-                    <article class="card">
+                        <button type="button" class="card-delete">Удалить</button>
+                    </div>
+                    <div class="card">
                         <img src="assets/icons/medal-gold.svg" alt="Золотая медаль" width="64" height="64">
                         <h3>Нормативы ГТО</h3>
                         <time datetime="2025-06-10">10 июня 2025</time>
                         <p>Сдал все нормативы своей ступени и получил золотой знак отличия.</p>
-                    </article>
-                    <article class="card">
+                        <button type="button" class="card-delete">Удалить</button>
+                    </div>
+                    <div class="card">
                         <img src="assets/icons/medal-bronze.svg" alt="Бронзовая медаль" width="64" height="64">
                         <h3>Соревнования по плаванию</h3>
                         <time datetime="2026-03-15">15 марта 2026</time>
                         <p>3 место на дистанции 50 м вольным стилем среди студентов университета.</p>
-                    </article>
+                        <button type="button" class="card-delete">Удалить</button>
+                    </div>
                 </div>
             </section>
 
