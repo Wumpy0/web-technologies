@@ -62,7 +62,8 @@ function getTodayInput() {
     return day + "." + month + "." + today.getFullYear();
 }
 
-// "14.09.2025" -> "2025-09-14". Если формат неверный, возвращает null
+// "14.09.2025" -> "2025-09-14". Если формат неверный, даты не существует
+// (например, 31.02.2026) или она ещё не наступила, возвращает null
 function parseDateInput(input) {
     const match = /^(\d{2})\.(\d{2})\.(\d{4})$/.exec(input.trim());
     if (!match) {
@@ -71,7 +72,16 @@ function parseDateInput(input) {
 
     const day = Number(match[1]);
     const month = Number(match[2]);
-    if (month < 1 || month > 12 || day < 1 || day > 31) {
+    const year = Number(match[3]);
+
+    // Date сдвигает несуществующую дату (31.02 -> 03.03), поэтому части сравниваются с введёнными
+    const date = new Date(year, month - 1, day);
+    if (date.getFullYear() !== year || date.getMonth() !== month - 1 || date.getDate() !== day) {
+        return null;
+    }
+
+    // Достижение не может быть в будущем
+    if (date > new Date()) {
         return null;
     }
 
@@ -246,7 +256,7 @@ function addAchievement(container, emptyMessage) {
 
     const date = parseDateInput(dateInput);
     if (!date) {
-        alert("Неверная дата. Введите дату в формате ДД.ММ.ГГГГ, например 14.09.2025");
+        alert("Неверная дата. Введите существующую дату не позже сегодняшней в формате ДД.ММ.ГГГГ, например 14.09.2025");
         return;
     }
 
